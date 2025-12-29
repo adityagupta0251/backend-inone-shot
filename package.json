@@ -4,7 +4,9 @@
   "description": "Hey There !",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,10 +15,20 @@
   "keywords": [
     "backend"
   ],
+  "type": "module",
   "author": "Adi.K01",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adityagupta0251/backend-inone-shot/issues"
   },
-  "homepage": "https://github.com/adityagupta0251/backend-inone-shot#readme"
+  "homepage": "https://github.com/adityagupta0251/backend-inone-shot#readme",
+  "dependencies": {
+    "@prisma/client": "^7.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "prisma": "^7.2.0"
+  }
 }
